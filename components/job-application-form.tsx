@@ -1121,10 +1121,10 @@ export default function JobApplicationForm() {
             <PartyPopper className="w-16 h-16 text-shamrock-300" />
           </div>
         </div>
-        <h1 className="text-4xl font-bold text-white">
+        <h1 className="text-3xl font-bold text-white">
           Application Submitted!
         </h1>
-        <p className="text-xl text-gray-300 max-w-md mx-auto">
+        <p className="text-lg text-gray-200 max-w-md mx-auto">
           Thank you for applying to EduRepublic. We've received your application
           successfully.
         </p>
@@ -1134,7 +1134,7 @@ export default function JobApplicationForm() {
         <h3 className="text-lg font-semibold text-shamrock-300 mb-3">
           What's Next?
         </h3>
-        <div className="space-y-3 text-sm text-gray-300">
+        <div className="space-y-3 text-sm text-gray-100">
           <div className="flex items-start gap-3">
             <CheckCircle className="w-5 h-5 text-shamrock-300 mt-0.5 flex-shrink-0" />
             <p>We'll review your application within 3-5 business days</p>
