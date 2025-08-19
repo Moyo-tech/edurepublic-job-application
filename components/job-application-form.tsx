@@ -262,7 +262,7 @@ export default function JobApplicationForm() {
             className="rounded-full"
           />
         </div>
-        <h1 className="text-4xl font-bold text-white">
+        <h1 className="text-3xl font-bold text-white">
           Welcome to EduRepublic
         </h1>
         <p className="text-md text-white max-w-md mx-auto">
@@ -272,6 +272,7 @@ export default function JobApplicationForm() {
 
       <div className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
+          
           <div className="p-4 rounded-lg bg-white/5 border border-shamrock-50">
             <User className="w-8 h-8 text-shamrock-300 mx-auto mb-2" />
             <h3 className="font-semibold text-white mb-1">Personal Info</h3>
@@ -283,11 +284,13 @@ export default function JobApplicationForm() {
             <h3 className="font-semibold text-white mb-1">Role Selection</h3>
             <p className="text-sm text-gray-300">Choose your position</p>
           </div>
+
           <div className="p-4 rounded-lg bg-white/5 border border-slate-50">
             <FileText className="w-8 h-8 text-shamrock-300 mx-auto mb-2" />
             <h3 className="font-semibold text-white mb-1">Experience</h3>
             <p className="text-sm text-gray-300">Share your background</p>
           </div>
+
         </div>
 
         <div className="space-y-2">
@@ -298,6 +301,7 @@ export default function JobApplicationForm() {
             All fields marked with * are required
           </p>
         </div>
+        
       </div>
     </motion.div>
   );
