@@ -106,11 +106,6 @@ export default function JobApplicationForm() {
       else if (!/\S+@\S+\.\S+/.test(formData.email))
         newErrors.email = "Invalid email format";
       if (!formData.phone.trim()) newErrors.phone = "Phone number is required";
-      else if (
-        !/^\+\d{1,3}\d{10,14}$/.test(formData.phone.replace(/\s/g, ""))
-      ) {
-        newErrors.phone = "Phone must include country code (e.g., +1234567890)";
-      }
     }
 
     if (step === 2) {
@@ -375,9 +370,7 @@ export default function JobApplicationForm() {
           {errors.phone && (
             <p className="text-red-400 text-sm mt-1">{errors.phone}</p>
           )}
-          <p className="text-sm text-gray-400 mt-1">
-            Include country code (e.g., +1 for US)
-          </p>
+      
         </div>
       </div>
     </motion.div>
